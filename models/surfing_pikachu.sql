@@ -10,7 +10,7 @@ move as (
   from pokemon_moves_move
 ),
 
-ashes_team as (
+surfing_pika as (
   select
     pokemon.pokemon_name,
     pokemon.pokemon_id,
@@ -21,4 +21,4 @@ ashes_team as (
   inner join move on (pokemon.pokemon_name = 'pikachu' and move.move_name = 'surf')
 )
 
-select distinct * from ashes_team
+select distinct * from surfing_pika
